@@ -6,7 +6,7 @@ This project will allow users to recommend best opening scores and
 allow them to vote on it. This will show the user's favorites and also
 public favorites.
 
-##Setting up the environment
+### Setting up the environment
 
 `elm-package install elm-lang/html`
 
@@ -20,7 +20,7 @@ now open web browser and go to
 
 This will show all the available files in the root directory, select Main.elm
 
-##step 1:
+## Step 1:
 added initData with model of
 title: String
 url: String
@@ -34,7 +34,7 @@ it to string before printing it so I piped the data toString
 
 `text <| toString <| initData`
 
-##Step 2:
+## Step 2:
 In this step we will display just one title and the video on the page
 For this we are going to full application model with view, update and model
 
@@ -73,7 +73,7 @@ view model =
         , iframe [ width 420, height 315, src initData.url ] []
         ]`
 
-##Step 3:
+## Step 3:
 Now that we were able to render one title and video, let's convert it to
 handle multiple records or List
 
