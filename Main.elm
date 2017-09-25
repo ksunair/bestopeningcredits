@@ -23,7 +23,7 @@ initData =
       , votes = 10
       , userCount = 1
       }
-    , { title = "True Detective Season 1"
+    , { title = "True Detective Season 2"
       , url = "https://www.youtube.com/embed/GJJfe1k9CeE"
       , votes = 10
       , userCount = 1
