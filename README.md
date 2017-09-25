@@ -32,3 +32,42 @@ in the main instead of printing initData as it is, we need to convert
 it to string before printing it so I piped the data toString
 
 text <| toString <| initData
+
+Step 2:
+In this step we will display just one title and the video on the page
+For this we are going to full application model with view, update and model
+
+Define the model definition and inital data as
+type alias Model =
+    { title : String
+    , url : String
+    , votes : Int
+    , userCount : Int
+    }
+
+
+initData : Model
+initData =
+    { title = "Game of Thrones"
+    , url = "https://www.youtube.com/embed/s7L2PVdrb_8"
+    , votes = 10
+    , userCount = 1
+    }
+
+Since there is no update function we create a dummy one
+
+type Msg
+    = DoNothing
+
+
+update : Msg -> Model -> Model
+update msg model =
+    initData
+
+Finally move the view to view section
+view : Model -> Html Msg
+view model =
+    div []
+        [ h1 [] [ text initData.title ]
+        , iframe [ width 420, height 315, src initData.url ] []
+        ]
