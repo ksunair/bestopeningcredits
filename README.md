@@ -40,20 +40,33 @@ For this we are going to full application model with view, update and model
 
 Define the model definition and inital data as
 `type alias Model =
+
     { title : String
+
     , url : String
+
     , votes : Int
+
     , userCount : Int
+
     }
 
 
+
 initData : Model
+
 initData =
+
     { title = "Game of Thrones"
+
     , url = "https://www.youtube.com/embed/s7L2PVdrb_8"
+
     , votes = 10
+
     , userCount = 1
+
     }`
+    
 
 Since there is no update function we create a dummy one
 
