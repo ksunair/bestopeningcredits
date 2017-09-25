@@ -1,4 +1,4 @@
-"# bestopeningcredits"
+# bestopeningcredits
 
 This Project is an attempt to learn Elm and Horizon.
 
