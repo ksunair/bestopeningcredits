@@ -18,7 +18,7 @@ initstate =
 
 initdata : Navigation.Location -> ( Model, Cmd Msg )
 initdata nav =
-    { initstate | page = AllTimeBest } ! [ Cmd.none ]
+    initstate ! [ Cmd.none ]
 
 
 type Page
